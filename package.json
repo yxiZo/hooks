@@ -1,14 +1,41 @@
 {
-  "name": "hooks",
+  "name": "@yxizo/hooks",
   "module": "useRequest.ts",
+  "version": "0.0.1",
+  "private": false,
+  "description": "",
   "type": "module",
+  "keywords": [
+    "react hooks"
+  ],
+  "authors": {
+    "name": "yxizo",
+    "email": "crifsri@icloud.com"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "metadata.json",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "bundle": "bun ./scripts/build.ts"
+  },
   "devDependencies": {
     "bun-types": "latest"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "optionalDependencies": {
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
