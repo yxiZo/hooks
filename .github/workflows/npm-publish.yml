@@ -12,12 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
       - uses: oven-sh/setup-bun@v1
         with:
-          bun-version: 1.0.11
+          bun-version: latest
       - run: bun install
       - run: bun test
       - run: bun run bundle
