@@ -1,6 +1,6 @@
 await Bun.build({
-    entrypoints: ['./src/index.tsx'],
-    outdir: './out',
+    entrypoints: ['./src/index.ts'],
+    outdir: './dist',
     minify: {
         // whitespace: true,
         // identifiers: true,

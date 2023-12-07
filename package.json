@@ -21,7 +21,8 @@
     "README.md"
   ],
   "scripts": {
-    "bundle": "bun ./scripts/build.ts"
+    "bundle": "bun ./scripts/build.ts",
+    "serve": "bun ./scripts/serve.ts"
   },
   "devDependencies": {
     "bun-types": "latest"
